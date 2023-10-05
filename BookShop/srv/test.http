@@ -1,0 +1,22 @@
+http://localhost:4004/odata/v4/my/Test/2a1f4847-6e5d-4646-a414-31763224f373
+
+###
+http://localhost:4004/odata/v4/my/Test
+
+###
+POST http://localhost:4004/odata/v4/my/Test
+content-Type: application/json;IEEE754Compatible=true
+
+    {
+      "title": "test2",
+      "descr": "Long2"
+    }
+
+###
+PATCH http://localhost:4004/odata/v4/my/Test/2a1f4847-6e5d-4646-a414-31763224f373
+Content-Type: application/json;IEEE754Compatible=true
+
+    {
+      "title": "test Done",
+      "descr": "Long 3"
+    }
